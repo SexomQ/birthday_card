@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=WindSong&display=swap" rel="stylesheet">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Happy Birthday, Cristinka )))</title>
+
+	<style>
+
+		body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.flip-card {
+  background-color: transparent;
+  width: 400px;
+  height: 600px;
+  perspective: 1000px;
+
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+}
+
+.flip-card:focus {
+    outline: 0;
+}
+
+.flip-card:hover .flip-card-inner,
+.flip-card:focus .flip-card-inner{
+  transform: rotateY(180deg);
+}
+
+.flip-card-front,
+.flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.flip-card-front {
+  background: linear-gradient(to left, #4364f7, #6fb1fc);
+  color: black;
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flip-card-back {
+  background: linear-gradient(to right, #4364f7, #6fb1fc);
+  color: white;
+  transform: rotateY(180deg);
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+	
+
+	</style>
+
+</head>
+<body>
+
+	<div class="flip-card" tabIndex="0">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <!--here comes the front page-->
+      <div class="front">
+      	<p style="margin-bottom: 30px; font-size: 30px; font-family: 'WindSong', cursive; font-weight: bold;">For my Sunshine )))</p>
+      	<p style="font-size: 40px;">&#128151</p>
+      	<img style="width:300px; height: 300px" src="assets/img/image.png">
+      </div>
+    </div>
+    <div class="flip-card-back">
+      <!--here comes the back page-->
+
+      <div style="font-family: 'WindSong', cursive; font-size: 35px;">Happy Birthday</div>
+      <div style="font-size: 30px;" >&#127873;</div>
+      <div style="font-family: 'WindSong', cursive; font-size: 30px;">to my favorite )</div>
+      <br>
+      <div style="font-family: 'WindSong', cursive; font-size: 20px;">You are the best <3 !</div>
+      <p></p>
+      <img style="width: 300px; height: 300px;" src="assets/img/hand.jpg">
+      <p style="font-family: 'WindSong', cursive; font-size: 18px;">Love you so much &#128151</p>
+    </div>
+  </div>
+</div>
+  
+	<script>
+		
+	</script>
+</body>
+</html>
